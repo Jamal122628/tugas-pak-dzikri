@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Cianjur</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Cianjur.html">Istana Cipanas</a></li>
+      <li><a href="pantai.html">Pantai Apra</a></li>
+      <li><a href="kebun raya.html">Kebun Raya Cibodas</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Kebun Raya Cibodas</h1>
+    <img src="Kebun Raya Cibodas.png">
+    <p>Tempat wisata ini terletak di ketinggian 1.300 sampai 1.425 meter di atas permukaan laut (mdpl) dengan luas 84,99 hektare, dilansir dari laman resmi Kebun Raya Cibodas.</p>
+    <p>Suasananya cocok untuk bersantai ditambah dengan adanya aneka pepohonan, sehingga bisa dijadikan tempat liburan bersama keluarga dan anak.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
